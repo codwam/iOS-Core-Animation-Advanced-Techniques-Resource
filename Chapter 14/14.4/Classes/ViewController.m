@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController() <UICollectionViewDataSource>
+@interface ViewController() <UICollectionViewDataSource, CALayerDelegate>
 
 @property (nonatomic, copy) NSArray *imagePaths;
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;

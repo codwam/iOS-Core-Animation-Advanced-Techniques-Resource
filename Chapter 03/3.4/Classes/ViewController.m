@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UIView *layerView;
-@property (nonatomic, weak) CALayer *blueLayer;
+@property (nonatomic, strong) CALayer *blueLayer;
 
 @end
 
@@ -28,6 +28,7 @@
     
     //add it to our view
     [self.layerView.layer addSublayer:self.blueLayer];
+    [self.layerView setNeedsDisplay];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -29,6 +29,7 @@
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.text = @"Hello World";
     label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor whiteColor];
     [button addSubview:label];
     
     return button;

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0155CA1217099C1F008C886D /* Crate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0155CA1017099C1F008C886D /* Crate.png */; };
 		0155CA1317099C1F008C886D /* Crate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0155CA1117099C1F008C886D /* Crate@2x.png */; };
-		0155CA3017099FF1008C886D /* libChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0155CA2F17099FF1008C886D /* libChipmunk-iPhone.a */; };
 		01DFB6C116CC4CDE006A7A9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6B716CC4CDE006A7A9F /* AppDelegate.m */; };
 		01DFB6C616CC4CDE006A7A9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6BD16CC4CDE006A7A9F /* main.m */; };
 		01DFB6C716CC4CDE006A7A9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFB6BF16CC4CDE006A7A9F /* ViewController.m */; };
@@ -21,6 +20,7 @@
 		01F7243416BEBAF400DB1F0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7243316BEBAF400DB1F0E /* Foundation.framework */; };
 		01F7243616BEBAF400DB1F0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7243516BEBAF400DB1F0E /* CoreGraphics.framework */; };
 		01F7245516BEBB6000DB1F0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F7245416BEBB6000DB1F0E /* QuartzCore.framework */; };
+		B7421D1C275B0174009DECD1 /* libChipmunk-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7421D1B275B0174009DECD1 /* libChipmunk-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,6 @@
 		0155CA2C17099FF1008C886D /* cpSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSpace.h; sourceTree = "<group>"; };
 		0155CA2D17099FF1008C886D /* cpSpatialIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSpatialIndex.h; sourceTree = "<group>"; };
 		0155CA2E17099FF1008C886D /* cpVect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpVect.h; sourceTree = "<group>"; };
-		0155CA2F17099FF1008C886D /* libChipmunk-iPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libChipmunk-iPhone.a"; sourceTree = "<group>"; };
 		01DFB6B616CC4CDE006A7A9F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01DFB6B716CC4CDE006A7A9F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		01DFB6BB16CC4CDE006A7A9F /* PhysicsTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhysicsTest-Info.plist"; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		01F7243316BEBAF400DB1F0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01F7243516BEBAF400DB1F0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		01F7245416BEBB6000DB1F0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B7421D1B275B0174009DECD1 /* libChipmunk-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libChipmunk-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7421D1C275B0174009DECD1 /* libChipmunk-iOS.a in Frameworks */,
 				01F7245516BEBB6000DB1F0E /* QuartzCore.framework in Frameworks */,
 				01F7243216BEBAF400DB1F0E /* UIKit.framework in Frameworks */,
 				01F7243416BEBAF400DB1F0E /* Foundation.framework in Frameworks */,
 				01F7243616BEBAF400DB1F0E /* CoreGraphics.framework in Frameworks */,
-				0155CA3017099FF1008C886D /* libChipmunk-iPhone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 				0155CA2C17099FF1008C886D /* cpSpace.h */,
 				0155CA2D17099FF1008C886D /* cpSpatialIndex.h */,
 				0155CA2E17099FF1008C886D /* cpVect.h */,
-				0155CA2F17099FF1008C886D /* libChipmunk-iPhone.a */,
+				B7421D1B275B0174009DECD1 /* libChipmunk-iOS.a */,
 			);
 			path = "Chipmunk-iPhone";
 			sourceTree = "<group>";
@@ -226,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 01F7242516BEBAF400DB1F0E;
@@ -337,6 +338,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chipmunk-iPhone\"",
+					"$(PROJECT_DIR)/Chipmunk-iPhone",
 				);
 				PRODUCT_NAME = PhysicsTest;
 				WRAPPER_EXTENSION = app;
@@ -352,6 +354,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chipmunk-iPhone\"",
+					"$(PROJECT_DIR)/Chipmunk-iPhone",
 				);
 				PRODUCT_NAME = PhysicsTest;
 				WRAPPER_EXTENSION = app;

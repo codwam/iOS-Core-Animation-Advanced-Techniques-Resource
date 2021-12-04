@@ -78,8 +78,8 @@ static NSString *const ImageFolder = @"Gradient Images";
             //find table cell and update
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
             UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"PNG: %03ims  JPG: %03ims",
-                                         pngTime, jpgTime];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"PNG: %03lims  JPG: %03lims",
+                                         (long)pngTime, (long)jpgTime];
         });
     });
 }

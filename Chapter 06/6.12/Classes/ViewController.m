@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface ViewController () <CALayerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 
@@ -41,7 +41,7 @@
     NSInteger y = floor(bounds.origin.y / layer.tileSize.height);
     
     //load tile image
-    NSString *imageName = [NSString stringWithFormat:@"Snowman_%02i_%02i", x, y];
+    NSString *imageName = [NSString stringWithFormat:@"Snowman_%02li_%02li", (long)x, (long)y];
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
     UIImage *tileImage = [UIImage imageWithContentsOfFile:imagePath];
     

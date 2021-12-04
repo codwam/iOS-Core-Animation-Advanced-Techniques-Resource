@@ -36,6 +36,10 @@
     CGPathAddEllipseInRect(circlePath, NULL, self.layerView2.bounds);
     self.layerView2.layer.shadowPath = circlePath;
     CGPathRelease(circlePath);
+    
+    self.layerView1.layer.cornerRadius = 20;
+    self.layerView1.layer.borderWidth = 5;
+    self.layerView1.layer.shadowOffset = CGSizeZero;
 }
 
 @end

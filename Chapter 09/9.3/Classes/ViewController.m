@@ -72,6 +72,7 @@
     animation.path = self.bezierPath.CGPath;
     animation.rotationMode = kCAAnimationRotateAuto;
     animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeRemoved;
     [self.shipLayer addAnimation:animation forKey:@"slide"];
 }
 

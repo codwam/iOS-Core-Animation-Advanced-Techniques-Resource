@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UIView *layerView;
-@property (nonatomic, weak) CALayer *blueLayer;
+@property (nonatomic, strong) CALayer *blueLayer;
 
 @end
 
@@ -25,19 +25,30 @@
     self.blueLayer = [CALayer layer];
     self.blueLayer.frame = CGRectMake(50.0f, 50.0f, 100.0f, 100.0f);
     self.blueLayer.backgroundColor = [UIColor blueColor].CGColor;
-    
+    self.blueLayer.zPosition = 1;
+
     //add it to our view
     [self.layerView.layer addSublayer:self.blueLayer];
+    
+    {
+        //create sublayer
+        CALayer* blueLayer = [CALayer layer];
+        blueLayer.frame = CGRectMake(75.0f, 75.0f, 100.0f, 100.0f);
+        blueLayer.backgroundColor = [UIColor redColor].CGColor;
+        
+        //add it to our view
+        [self.layerView.layer addSublayer:blueLayer];
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     //get touch position
     CGPoint point = [[touches anyObject] locationInView:self.view];
-    
+
     //get touched layer
     CALayer *layer = [self.layerView.layer hitTest:point];
-    
+
     //get layer using hitTest
     if (layer == self.blueLayer)
     {

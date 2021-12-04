@@ -105,7 +105,7 @@
     self.scrollView.layer.sublayers = visibleLayers;
     
     //log
-    NSLog(@"displayed: %i/%i", [visibleLayers count], DEPTH*HEIGHT*WIDTH);
+    NSLog(@"displayed: %lu/%i", (unsigned long)[visibleLayers count], DEPTH*HEIGHT*WIDTH);
 }
 
 @end

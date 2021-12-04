@@ -30,10 +30,10 @@
     self.layerView.layer.contentsGravity = kCAGravityCenter;
     
     //set the contentsScale to match screen
-    self.layerView.layer.contentsScale = image.scale;
+    self.layerView.layer.contentsScale = 2;
     
     //clip the snowman to fit his bounds
-    self.layerView.layer.masksToBounds = YES;
+//    self.layerView.layer.masksToBounds = YES;
 }
 
 @end
